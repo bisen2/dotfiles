@@ -1,0 +1,13 @@
+#! /usr/bin/env bash
+
+# ~/.sshrc
+# sourced when sshrc is run
+
+# source bashrc
+source $SSHHOME/.sshrc.d/.bashrc
+
+# source vimrc
+export VIMINIT="let \$MYVIMRC=' $SSHHOME/.sshrc.d/.vimrc' | source \$MYVIMRC"
+
+# move to home directory
+cd ~
